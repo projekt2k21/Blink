@@ -1,0 +1,264 @@
+#background{
+    max-width: 100%;
+    height: 1280px;
+    background: url("backgroundMain.jpg");
+    background-size: cover;         
+    background-position: center;    
+}
+
+.caly_blok {
+    position:relative;
+    width:500px;
+    height:300px;
+    margin:0 auto;
+    margin-top: 2%;
+    border:1px solid #000;
+    background-color:white;
+  }
+
+  .caly_blok p {
+    margin:0;
+  }
+
+  .caly_blok img {
+    width:500px;
+    height:300px;
+    border:none;
+  }
+
+  .caly_blok span {
+    font-weight: bold;
+    display:block;
+    background: linear-gradient(to bottom,  rgb(43, 42, 42) 0%,rgb(20, 20, 20) 100%); 
+    color:white;
+    padding:5px;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    left:0;
+  }
+
+  .caly_blok a {
+    color:white;
+    font-size:16px;
+    text-decoration:none;
+  }
+
+  .caly_blok a:hover span {
+    text-decoration:none;
+    color:#078fc5;
+  }
+
+
+  @media screen and (max-width:1150px)  {
+      iframe{
+         width: 280px;
+         height: 180px;
+      }
+  }
+
+  @media screen and (max-width:500px)  {
+      #socialMedia{
+          visibility: hidden;
+      }
+  }
+
+/* */
+
+.scal {
+    transition: all .4s;
+  }
+  .scal:hover {
+    transform: scale(1.10);
+  }
+
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 100px;
+    text-align: center;
+  }
+
+ 
+
+  header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    }
+  }
+
+
+
+
+/*
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Strona główna</a>
+                <a class="nav-item nav-link" href="#">O nas</a>
+                <a class="nav-item nav-link" href="#">Portfolio</a>
+                <a class="nav-item nav-link" href="#">Portfolio</a>
+                <a class="nav-item nav-link" href="#">Kontakt</a>
+              </div>
+            </div>
+          </nav>
+
+          background: url("backgroundMain.jpg") 0 / cover fixed; 
+
+          .scal {
+    transition: all .4s;
+  }
+  .scal:hover {
+    transform: scale(1.10);
+  }
+
+   <div id="background" class="img-fluid col-md-12 text-light" style=" font-size: 25px;position: absolute;">
+            
+            
+                <div class = "col-md-12 text-center h2" style="position: relative;font-size: 90px; margin-top: 500px;" >NAZWA FIRMY</div>
+            
+        
+            </div>
+
+
+           .main-header.fixed-nav .navbar-brand > img:last-of-type {
+    display: block;
+  }
+  
+  .main-header.fixed-nav .navbar-brand > img:first-of-type {
+    display: none;
+  }
+  .navbar-brand {
+    color: #fff;
+  }
+  .main-header .navbar-brand img {
+    max-width: 40px;
+    animation: fadeInLeft 0.4s both 0.4s;
+  }
+}
+
+
+
+
+
+<header class="main-header">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg main-nav px-0">
+            <a class="navbar-brand" href="/mojo">
+                    <img src="logo.png" alt="rajeshdas.com">
+                  </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar icon-bar-1"></span>
+                            <span class="icon-bar icon-bar-2"></span>
+                            <span class="icon-bar icon-bar-3"></span>
+                        </button>
+            <div class="collapse navbar-collapse" id="mainMenu">
+              <ul class="navbar-nav ml-auto text-uppercase f1">
+                <li>
+                  <a href="#home" class="active active-first">home</a>
+                </li>
+                <li>
+                  <a href="#about">about us</a>
+                </li>
+                <li>
+                  <a href="#service">services</a>
+                </li>
+                <li>
+                  <a href="#project">projects</a>
+                </li>
+                <li>
+                  <a href="#team">team</a>
+                </li>
+                <li>
+                  <a href="#testimony">testimonils</a>
+                </li>
+                <li>
+                  <a href="#contact">contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- /.container -->
+      </header>
+
+
+
+
+       <div id="background" class="img-fluid col-md-12 text-light">
+
+            <div class="bg-text" style="color: white;font-size: 50px;text-align: center;">
+                <span>Nazwa firmy</span>
+                <div>krótki opis</div>
+            </div>
+            
+            
+                <div style="position: fixed;width: 50px; height: 100;margin-top: 15%;" id="socialMedia">
+                    <img src="facebook.png">
+                    <img src="facebook.png">
+                    <img src="facebook.png">
+                </div>
+            
+        
+            </div>
+
+
+
+
+*/
