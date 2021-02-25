@@ -6,64 +6,12 @@
     background-position: center;    
 }
 
-.caly_blok {
-    position:relative;
-    width:500px;
-    height:300px;
-    margin:0 auto;
-    margin-top: 2%;
-    border:1px solid #000;
-    background-color:white;
-  }
-
-  .caly_blok p {
-    margin:0;
-  }
-
-  .caly_blok img {
-    width:500px;
-    height:300px;
-    border:none;
-  }
-
-  .caly_blok span {
-    font-weight: bold;
-    display:block;
-    background: linear-gradient(to bottom,  rgb(43, 42, 42) 0%,rgb(20, 20, 20) 100%); 
-    color:white;
-    padding:5px;
-    width:100%;
-    position:absolute;
-    bottom:0;
-    left:0;
-  }
-
-  .caly_blok a {
-    color:white;
-    font-size:16px;
-    text-decoration:none;
-  }
-
-  .caly_blok a:hover span {
-    text-decoration:none;
-    color:#078fc5;
-  }
-
-
   @media screen and (max-width:1150px)  {
       iframe{
          width: 280px;
          height: 180px;
       }
   }
-
-  @media screen and (max-width:500px)  {
-      #socialMedia{
-          visibility: hidden;
-      }
-  }
-
-/* */
 
 .scal {
     transition: all .4s;
@@ -72,25 +20,8 @@
     transform: scale(1.10);
   }
 
-  .bg-text {
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0, 0.4); 
-    color: white;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 100px;
-    text-align: center;
-  }
-
   header {
     position: relative;
-    background-color: black;
     height: 75vh;
     min-height: 25rem;
     width: 100%;
@@ -120,13 +51,50 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
-    opacity: 0.5;
     z-index: 1;
   }
   
-  @media (pointer: coarse) and (hover: none) {
-   
+ 
+  .photo-gallery {
+    color:#313437;
+    background-color:#fff;
+  }
+  
+  .photo-gallery p {
+    color:#7d8285;
+  }
+  
+  .photo-gallery h2 {
+    font-weight:bold;
+    margin-bottom:40px;
+    padding-top:40px;
+    color:inherit;
+  }
+  
+  @media (max-width:767px) {
+    .photo-gallery h2 {
+      margin-bottom:25px;
+      padding-top:25px;
+      font-size:24px;
+    }
+  }
+  
+  .photo-gallery .intro {
+    font-size:16px;
+    max-width:500px;
+    margin:0 auto 40px;
+  }
+  
+  .photo-gallery .intro p {
+    margin-bottom:0;
+  }
+  
+  .photo-gallery .photos {
+    padding-bottom:20px;
+  }
+  
+  .photo-gallery .item {
+    padding-bottom:30px;
   }
 
 
